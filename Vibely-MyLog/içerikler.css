@@ -1,0 +1,319 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family:'Quicksand',sans-serif;
+    height: 100%;
+    font-size: 25px;
+}
+ul{
+    list-style: none;
+}
+
+/*Menü Section*/
+
+#nav-bar{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    transition: all 0.3s;
+    border-bottom: rgb(77, 72, 72) solid 1px;
+    background-color: #fff;
+}
+#nav-logo a{
+    text-decoration: none;
+    float: left;
+    font-size: 3.9rem;
+    padding-top: 10px;
+    padding-left: 90px;
+    color:#116062;
+    display: block; 
+    transition:all 0.3s ease;
+}
+#nav-bar ul{
+    float: right;
+
+    margin-top: 10px;
+    margin-right: 125px;
+    height: 40%;
+}
+#nav-bar ul li{
+    display: block;
+    font-weight: 600;  
+    padding: 30px;
+    float: left;  transition:all 0.3s ease;
+}
+#nav-bar ul li a{
+    text-decoration: none;
+    color: rgb(77, 72, 72); 
+    font-size: 2.1rem;  transition:all 0.3s ease;
+}
+#nav-bar ul li a:hover{
+   color: #116062;
+   font-size: 2.5rem;
+}
+
+    /*Yapışkan Menü*/
+   #nav-bar.stick{
+    padding:1px 0 ;
+    background-color: white;
+    border-bottom: rgb(77, 72, 72) 1px solid;
+    z-index: 1;
+   }
+   #nav-bar.stick #nav-logo a  {
+        font-size: 3.5rem;
+   
+}
+#nav-bar.stick ul li{
+    padding:20px
+}
+#nav-bar.stick ul li a{
+    font-size: 1.9rem;
+}
+
+
+
+
+
+.hamburger-menu{
+ float: right;
+ margin-top: 25px;
+ margin-right: 25px;
+ font-size: 3rem;
+ 
+}
+.hamburger-menu i{
+    color: rgb(77, 72, 72);cursor: pointer;
+}
+
+.zemin{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index:999;
+    top:0;
+    left:-100vw;
+    background: rgb(77, 72, 72);
+    overflow-x: hidden;
+    transition: .5s;
+}
+.zemin a{
+    display: block;
+    padding:20px;
+    text-decoration: none;
+    color: #fff;
+    transition: .4s;
+    font-size:60px;
+    border-top:solid 2px rgba(241,241,241,0);
+    border-bottom:solid 2px rgba(241,241,241,0);
+}
+.zemin .kapatBtn{
+    position: absolute;
+    top:40px;
+    right: 40px;
+    font-size:100px;
+    color: #fff;
+}
+
+.zemin-menu{
+    position: relative;
+    top:25%;
+    width: 100%;
+    text-align: center;
+}
+.zemin-menu a:hover, .zemin-menu a:focus{
+    color:#fff;
+    border-top:solid 2px #f1f1f1;
+    border-bottom:solid 2px #f1f1f1;
+    background:#0f5152}
+/*Content Section*/
+.container{
+   height:2000px;
+   padding-top: 150px;
+}
+.cont{
+    width:48%;
+    border: 1px solid rgb(77, 72, 72);
+    float: left;
+     margin-top: 30px;
+}
+.devam{
+    font-size: 25px;
+    color: #fff;
+text-align: center;
+padding-top: 100px;
+display: none;
+}
+
+.img{
+
+    height: 220px;
+    background-position: center;
+    background-size: cover;
+}
+
+.left-t{
+    margin-top: -70px;
+    }
+
+.right-col{  
+      margin-left: 30px;
+    }
+
+.info{
+        padding-left: 10px;
+        font-size: 1.4rem;
+    }
+hr{
+       width:90%;
+       padding-left: 80px;
+                 }
+    
+.bilgi{
+        padding-bottom: 5px;
+ }
+    
+    
+.time{
+        display: block;
+        float: left;
+        font-size: 1.5rem;
+ }
+ 
+
+ .Başlık{
+     text-decoration: none;
+     color:#0f5152
+
+ }
+ .Başlık:hover{
+
+    color:#0f5152
+
+}
+
+ .konular2{
+     display: none;
+ }
+ .konular{
+    width: 48%;
+    height:100px;
+    position: relative;
+   float: left;
+} 
+.konular2{
+    width: 100%;
+    height: 100px; float: left;
+
+}
+.konu{
+    display: block;
+    margin-left: 60px;
+    position: absolute; 
+    float: left;
+}
+.box{
+    display: block;
+    width:25%;
+    margin-top:10px;
+    background-color:#116062;
+    float:left;
+    height:40px;
+    margin-left: 20px;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 3px; 
+}
+.box a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 19px;
+}
+.box a:hover{
+    color: #fff;
+    font-size: 20px;
+}
+/*images*/
+#sun-explode{
+    background-image: url('İmages/Aesthetic-Wallpapers-For-Laptop-9-From-WallpaperHook.com-For-Free-scaled.jpg');
+}
+#img1{
+    background-image: url('İmages/image1.jfif');
+}
+#img2{
+    background-image: url('İmages/image2.jpg');
+}
+#img3{
+    background-image: url('İmages/image3.jpg');
+}
+#img4{
+    background-image: url('İmages/image4.jpg');
+}
+#img5{
+    background-image: url('İmages/aesthetic-tan-laptop-wallpapers-wallpaper-cave-tan-aesthetic-wallpaper-1536x960.jpg');
+}
+#img6{
+    background-image: url('İmages/1170573.jpg');
+}
+
+/*Footer*/
+footer {
+    width: 100%;
+    height: 50px;
+    float: left;
+    background-color: #0f5152
+}
+#footer-text{
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+  padding-top: 10px;
+}
+
+
+/*Responsive*/
+@media  screen and (max-width:1200px) {
+
+    .box a{
+        font-size: 15px;
+    }
+      
+  }
+  @media  screen and (max-width:1050px) {
+    body{
+        font-size: 30px;
+    }
+    .konular{
+        display: none;
+    }
+    .konular2{
+        display: block;
+        margin-bottom: 50px;
+        margin-left: 5%;
+    }
+    #nav-bar ul{
+        display: none;
+    }
+   
+    .cont{
+      width:100%;
+      border: 1px solid black;
+      float: left;
+       margin-top: 30px;
+  }
+  .left-t{
+      margin-top: 30px;
+      }
+  .right-col{  
+        margin-left: 0px;
+      }
+      .hamburger-menu{
+          display: block;
+          color: #000;
+      }
+      
+
+}
+    

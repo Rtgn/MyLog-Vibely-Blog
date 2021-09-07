@@ -1,0 +1,244 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family:'Quicksand',sans-serif;
+    height: 100%;
+    font-size: 25px;
+}
+ul{
+    list-style: none;
+}
+
+/*Menü Section*/
+
+#nav-bar{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    transition: all 0.3s;
+    border-bottom: rgb(77, 72, 72) solid 1px;
+    background-color: #fff;
+}
+#nav-logo a{
+    text-decoration: none;
+    float: left;
+    font-size: 3.9rem;
+    padding-top: 10px;
+    padding-left: 90px;
+    color:#116062;
+    display: block;transition:all 0.3s ease;
+}
+#nav-bar ul{
+    float: right;
+
+    margin-top: 10px;
+    margin-right: 125px;
+    height: 40%;
+}
+#nav-bar ul li{
+    display: block;
+    font-weight: 600;  
+    padding: 30px;
+    float: left;transition:all 0.3s ease;
+}
+#nav-bar ul li a{
+    text-decoration: none;
+    color: rgb(77, 72, 72); 
+    font-size: 2.1rem;transition:all 0.3s ease;
+}
+#nav-bar ul li a:hover{
+   color: #116062;
+   font-size: 2.5rem;
+}
+
+    /*Yapışkan Menü*/
+    #nav-bar.stick{
+        padding:1px 0 ;
+        background-color: white;
+        border-bottom: rgb(77, 72, 72) 1px solid;
+        z-index: 1;
+       }
+       #nav-bar.stick #nav-logo a  {
+            font-size: 3.5rem;
+       
+    }
+    #nav-bar.stick ul li{
+        padding:20px
+    }
+    #nav-bar.stick ul li a{
+        font-size: 1.9rem;
+    }
+
+
+
+    
+.hamburger-menu{
+    float: right;
+    margin-top: 25px;
+    margin-right: 25px;
+    font-size: 3rem;
+    display: none;
+    
+   }
+   .hamburger-menu i{
+       color: rgb(77, 72, 72);cursor: pointer;
+   }
+   
+   .zemin{
+       height: 100vh;
+       width: 100vw;
+       position: fixed;
+       z-index:999;
+       top:0;
+       left:-100vw;
+       background: rgb(77, 72, 72);
+       overflow-x: hidden;
+       transition: .5s;
+   }
+   .zemin a{
+       display: block;
+       padding:20px;
+       text-decoration: none;
+       color: #fff;
+       transition: .4s;
+       font-size:60px;
+       border-top:solid 2px rgba(241,241,241,0);
+       border-bottom:solid 2px rgba(241,241,241,0);
+   }
+   .zemin .kapatBtn{
+       position: absolute;
+       top:40px;
+       right: 40px;
+       font-size:100px;
+       color: #fff;
+   }
+   
+   .zemin-menu{
+       position: relative;
+       top:25%;
+       width: 100%;
+       text-align: center;
+   }
+   .zemin-menu a:hover, .zemin-menu a:focus{
+       color:#fff;
+       border-top:solid 2px #f1f1f1;
+       border-bottom:solid 2px #f1f1f1;
+       background:#0f5152}
+/*Keşfet Section*/
+.container{
+    height:1400px;
+    padding-top: 150px;
+ }
+ .kutu{
+    width: 30%;
+   height: 350px;
+    border: black 1px solid;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right:2px;
+    padding-bottom: 20px;
+}
+
+hr{
+    width:90%;
+    padding-left: 80px;
+ }
+ 
+
+ .info-k{
+    padding-left: 10px;
+    font-size: 1.3rem;
+}
+ 
+ 
+ .time{
+     display: block;
+     float: left;
+     font-size: 1.5rem;
+ }
+ .img{
+     width: 100%;
+     height: 220px;
+     background-position: center center;
+     background-size: cover;
+ }
+ .Başlık{
+    text-decoration: none;
+    color:#0f5152
+
+}
+.Başlık:hover{
+
+   color:#0f5152
+
+}
+/*resimler*/
+ #img1{
+    background-image: url('İmages/image1.jfif');
+}
+#img2{
+    background-image: url('İmages/image2.jpg');
+}
+#img3{
+    background-image: url('İmages/image3.jpg');
+}
+#img4{
+    background-image: url('İmages/image4.jpg');
+}
+#img5{
+    background-image: url('İmages/aesthetic-tan-laptop-wallpapers-wallpaper-cave-tan-aesthetic-wallpaper-1536x960.jpg');
+}
+#img6{
+    background-image: url('İmages/1170573.jpg');
+}
+#img7{
+    background-image: url('İmages/image1.jfif');
+}
+#img8{
+    background-image: url('İmages/image2.jpg');
+}
+#img9{
+    background-image: url('İmages/image3.jpg');
+}
+
+/*Footer*/
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: #0f5152;
+    float: left;
+    margin-top: 50px;
+
+}
+#footer-text{
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+  padding-top: 10px;
+}
+
+
+    /*Respponsive */
+
+
+  @media screen and (max-width:870px) {
+    #nav-bar ul{
+        display: none;
+    }
+    .hamburger-menu{
+        display: block;
+        
+       }
+  }
+  @media screen and (max-width:770px) {
+    .kutu{
+        width: 40%;
+       height: 350px;
+   
+        margin-left: 5%;
+    }
+  }

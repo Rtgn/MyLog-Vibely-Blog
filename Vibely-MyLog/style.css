@@ -1,0 +1,521 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family:'Quicksand',sans-serif;
+    height: 100%;
+    font-size: 25px;
+}
+ul{
+    list-style: none;
+}
+
+.container .title{
+   position: relative;
+    }
+.container .title::before{
+    content:"";
+    position: absolute;
+    bottom: 0px;
+    left:50%;
+    width:400px;
+    height: 3px;
+    background: rgb(77, 72, 72);
+    transform: translateX(-50%);
+}
+
+.container .title::after{
+    position: absolute;
+   bottom: -15px;
+    left:50%;
+    font-size: 35px;
+    color:#116062;
+    padding:5px;
+    background: #fff;
+    transform: translateX(-50%);
+    
+}
+
+section{
+    width: 300px;
+    border: 1px solid rgb(77, 72, 72);
+    margin-top: 100px;
+}
+/*Hero Section*/
+
+#hero {
+    width: 100%;
+    height:625px;
+    background-image: url('İmages/hero-image.jpg');
+    background-position: center;
+    background-size: cover;
+   
+
+}
+#nav-bar{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    transition: all 0.3s; 
+    
+}
+#nav-logo a{
+    text-decoration: none;
+    float: left;
+    font-size: 3.9rem;
+    padding-top: 10px;
+    padding-left: 90px;
+    color:#116062;
+    display: block;
+}
+#nav-bar ul{
+    float: right;
+   display: block;
+    margin-top: 10px;
+    margin-right: 125px;
+    height: 40%; transition:all 0.3s ease;
+}
+#nav-bar ul li{
+    display: block;
+    font-weight: 600;  
+    padding: 30px;
+    float: left; transition:all 0.3s ease;
+}
+#nav-bar ul li a{
+    text-decoration: none;
+    color: rgb(77, 72, 72); 
+    font-size: 2.1rem; transition:all 0.3s ease;
+}
+#nav-bar ul li a:hover{
+   color: #116062;
+   font-size: 2.5rem;
+}
+    /*Yapışkan Menü*/
+    #nav-bar.stick{
+        padding:1px 0 ;
+        background-color: white;
+        border-bottom: rgb(77, 72, 72) 1px solid;
+        z-index: 1;
+       }
+       #nav-bar.stick #nav-logo a  {
+            font-size: 3.5rem;
+       
+    }
+    #nav-bar.stick ul li{
+        padding:20px
+    }
+    #nav-bar.stick ul li a{
+        font-size: 1.9rem;
+    }
+
+#Hero-text {
+	margin-top: 200px;
+    margin-left: 100px;
+   float: left;
+}
+#Hero-text h1 {
+	display: block;
+
+	font-size: 4rem;
+    color: rgb(77, 72, 72);
+
+}
+#Hero-text h1:nth-child(3){
+    color: #116062;
+}
+
+
+
+
+.hamburger-menu{
+    float: right;
+    margin-top: 25px;
+    margin-right: 50px;
+    font-size: 3rem;
+    display: none;
+    
+   }
+   .hamburger-menu i{
+       color: rgb(77, 72, 72);cursor: pointer;
+   }
+   
+   .zemin{
+       height: 100vh;
+       width: 100vw;
+       position: fixed;
+       z-index:999;
+       top:0;
+       left:-100vw;
+       background: rgb(77, 72, 72);
+       overflow-x: hidden;
+       transition: .5s;
+   }
+   .zemin a{
+       display: block;
+       padding:20px;
+       text-decoration: none;
+       color: #fff;
+       transition: .4s;
+       font-size:60px;
+       border-top:solid 2px rgba(241,241,241,0);
+       border-bottom:solid 2px rgba(241,241,241,0);
+   }
+   .zemin .kapatBtn{
+       position: absolute;
+       top:40px;
+       right: 40px;
+       font-size:100px;
+       color: #fff;
+   }
+   
+   .zemin-menu{
+       position: relative;
+       top:25%;
+       width: 100%;
+       text-align: center;
+   }
+   .zemin-menu a:hover, .zemin-menu a:focus{
+       color:#fff;
+       border-top:solid 2px #f1f1f1;
+       border-bottom:solid 2px #f1f1f1;
+       background:#0f5152}
+/* End Hero Section */
+
+/*About Section*/
+#about{
+    top: 100px;
+
+    height: 450px;
+}
+#about .title::after{
+    content:"Hakkımda"
+}
+
+.about-content {
+    width: 90%;
+    height: 90%;
+}
+.left-about {
+    float: left;
+    width: 45%;
+    height: 100%; 
+    margin-top: 40px;
+}
+.left-about img{
+    width: 360px;
+    height: 360px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+
+}
+.right-about{
+    float: left;
+    margin-left: 5%;
+   margin-top: 30px;
+    width: 50%;
+    height: 100%;
+    
+}
+.right-about a{
+    text-decoration: none;
+}
+.right-about a:hover .iletisim-buton{
+    background-color: #fff;
+    color: #0f5152;
+}
+
+
+#about-text{
+    font-size: 1.5rem;
+}
+#about-text span{
+    color: #116062;
+    font-size: 2.5rem;
+}
+.iletisim-buton {
+    width: 225px;
+    height: 70px;
+    background-color: #0f5152;
+    color: #fff;
+    font-size: 25px;
+text-align: center;
+padding-top: 10px;
+border: rgb(77, 72, 72) 1px solid;
+transition: all 0.5s;
+margin-top: 30px;
+
+}
+
+
+
+/*End About Section*/
+
+#skills {
+    height: 400px;
+    margin-top: 200px;
+}
+#skills .title::after{
+    content:"Neler Biliyorum?"
+}
+.left-skills{
+    float: left;
+    width: 50%;
+    height: 100%; 
+    margin-top: 50px;
+}
+#skills-list{
+    width: 100%;
+    height: 100%;
+
+}
+#skills-list  li{
+    font-size: 1.8rem;
+    display: block;
+    padding: 13px;
+}
+.right-skills{
+    float: left;
+    width: 50%;
+    height: 100%;
+    margin-top: 40px;
+}
+
+
+#hp{
+    float: left;
+    width: 80%;  
+    height: 10px;
+    background-color: #116062;
+  
+}/*ortak percent ve line özelliklerini class içinde toplayabilirsin sonradan*/
+#hl{
+    float: left;
+    width: 20%; 
+    height: 10px;
+    background-color: rgb(77, 72, 72);
+}
+.CSS{
+margin-top: 40px;
+}
+#cp{
+    float: left;
+    width: 70%;  
+    height: 10px;
+    background-color: #116062;
+}
+#cl{
+    float: left;
+    width: 30%; 
+    height: 10px;
+    background-color: rgb(77, 72, 72);
+}
+.JS{
+    margin-top: 40px;
+}
+#jp{
+    float: left;
+    width: 50%;  
+    height: 10px;
+    background-color: #116062;
+}
+#jl{
+    float: left;
+    width: 50%; 
+    height: 10px;
+    background-color: rgb(77, 72, 72);
+}
+
+.bs{
+    margin-top: 40px; 
+}
+#bp{
+    float: left;
+    width: 75%;  
+    height: 10px;
+    background-color: #116062;
+}
+#bl{
+    float: left;
+    width: 25%; 
+    height: 10px;
+    background-color: rgb(77, 72, 72);
+}
+
+.py{
+    margin-top: 40px; 
+}
+#pp{
+    float: left;
+    width: 20%;  
+    height: 10px;
+    background-color: #116062;
+}
+#pl{
+    float: left;
+    width: 80%; 
+    height: 10px;
+    background-color: rgb(77, 72, 72);
+}
+.percent-info span{
+    font-size: 1.4rem;
+}
+
+/*End Skills Section*/
+#contact{
+    margin-top: 100px;
+    height: 250px;
+}
+#contact .title::after{
+    content:"İletişim"
+}
+.contact-text{
+    width: 100%;
+    height: 150px;
+    padding-top:50px ;
+    font-size: 1.5rem;
+    float: left;
+}
+.contact-info{
+    width: 100%;
+    height: 100px;
+    float: left
+}
+.mail{
+   
+    float: left;
+}
+.mail a{
+    padding-left: 5px;
+    text-decoration: none;
+    color: rgb(77, 72, 72);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.fa-envelope{
+    font-size: 2rem;
+    color: #116062;
+    float: left;
+}
+.fa-grip-lines-vertical{
+    font-size: 2rem;
+    color: rgb(77, 72, 72);
+    float: left;
+    margin-left: 10px;
+}
+.fa-github-square{
+    font-size: 2rem;
+    color: #116062;
+    float: left;
+    margin-left: 15px;
+}
+.Github a{
+    padding-left: 5px;
+    text-decoration: none;
+    color: rgb(77, 72, 72);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+/*Footer*/
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: #0f5152
+}
+#footer-text{
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+  padding-top: 10px;
+}
+
+/*Responsive*/
+
+    /*Hero*/
+    @media screen and (max-width:970px) {
+        #nav-bar ul {
+            display: none;
+
+        }
+        .hamburger-menu{
+            display: block;
+        }
+        
+    }
+    @media screen and (max-width:800px) {
+        #hero {
+           
+            height:620px;
+            background-position: right;
+           
+        
+        }
+    }
+    @media screen and (max-width:760px) {
+
+        #about{
+         
+                height: 785px;
+            
+        }
+        
+        .about-content {
+            width: 90%;
+            height: 90%;
+        }
+        .left-about {
+          
+            width: 100%;
+            height: 330px; 
+        }
+        .left-about img{
+            width: 330px;
+            height: 330px;
+            margin-left: 20%;
+        }
+        .right-about{
+            float: left;
+            margin-left: 5%;
+           margin-top: 30px;
+            width: 100%;
+            height: 200px
+            
+        }
+        
+
+        #about-text span{
+           
+            font-size: 2.3rem;
+        }
+        .iletisim-buton {
+            width: 200px;
+            height: 50px;
+        
+        }
+        
+        
+    }
+
+    @media screen and (max-width:780px) {
+        #contact{
+            height: 280px;
+        }
+        .contact-info{    
+            margin-top: 50px;
+            height: 130px;
+
+        }
+    }
+    @media screen and (max-width:420px) {
+        #contact{
+            height: 350px;
+        }
+        .contact-info{    
+            margin-top: 120px;
+            height: 200px;
+
+        }
+    }
+   
